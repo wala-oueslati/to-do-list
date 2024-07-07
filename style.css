@@ -1,0 +1,279 @@
+@import url("C:\Users\dell\Desktop\Nouveau dossier\index.html");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body {
+    background-color: #2f363e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+h1 {
+    width: 100%;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+h3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    color: #ffffffa5;
+}
+p {
+    display: flex;
+    justify-content: flex-start;
+}
+.box {
+    position: fixed;
+    width: 1000px;
+    height: 650px;
+    background: #2f363e;
+    padding: 30px 50px;
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+    10px 10px 70px rgba(0, 0, 0, 0.25),
+    inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 20px rgba(255, 255, 255, 0.2),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+}
+#input {
+    position: relative;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+    border-radius: 30px;
+    font: 1rem;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+    inset 2px 2px 5px rgba(0, 0, 0, 0.5),
+    inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+}
+.sections {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    border: none;
+    width: 950px;
+    height: 450px;
+}
+.section1 {
+    position: static;
+    width: 300px;
+    height: 450px;
+    border: none;
+    right: 30px;
+    top: 200px;
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+    10px 10px 70px rgba(0, 0, 0, 0.25),
+    inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 20px rgba(255, 255, 255, 0.2),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+}
+.section1 li {
+    position: relative;
+    width: calc(100% - 50px);
+    display: flex;
+    align-items: center;
+    background: #1f83f2;
+    margin: 10px 10px;
+    padding: 10px 10px 10px 20px;
+    min-height: 45px;
+    cursor: pointer;
+    border-radius: 22.5px;
+    color: #fff;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+    inset 2px 2px 5px rgba(0, 0, 0, 0.5),
+    inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+}
+.section1 li i {
+    content: 'X';
+    position: absolute;
+    right: -32px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ff2c74;
+    border-radius: 50%;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+    inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+    inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+}
+.section1 li::after {
+    content: '';
+    font-family: sans-serif;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 15px;
+    right: -30px;
+    width: 10px;
+    height: 10px;
+}
+.section2 {
+    position: static;
+    width: 300px;
+    height: 450px;
+    border: none;
+    right: 400px;
+    top: 200px;
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+    10px 10px 70px rgba(0, 0, 0, 0.25),
+    inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 20px rgba(255, 255, 255, 0.2),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+}
+.section2 li {
+    position: relative;
+    width: calc(100% - 50px);
+    display: flex;
+    align-items: center;
+    background: #d9f21f;
+    margin: 10px 10px;
+    padding: 10px 10px 10px 20px;
+    min-height: 45px;
+    cursor: pointer;
+    border-radius: 22.5px;
+    color: #fff;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+    inset 2px 2px 5px rgba(0, 0, 0, 0.5),
+    inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+}
+.section2 li i {
+    content: 'X';
+    position: absolute;
+    right: -32px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ff2c74;
+    border-radius: 50%;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+    inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+    inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+}
+.section2 li.doing::after {
+    content: 'X';
+    font-family: sans-serif;
+    position: absolute;
+    top: 10px;
+    right: -30px;
+    width: 10px;
+    height: 10px;
+}
+.section3 {
+    position: static;
+    width: 300px;
+    height: 450px;
+    border: none;
+    right: 750px;
+    top: 200px;
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+    10px 10px 70px rgba(0, 0, 0, 0.25),
+    inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 20px rgba(255, 255, 255, 0.2),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+}
+.section3 li {
+    position: relative;
+    width: calc(100% - 50px);
+    display: flex;
+    align-items: center;
+    background: #1ff27a;
+    margin: 10px 10px;
+    padding: 10px 10px 10px 20px;
+    min-height: 45px;
+    cursor: pointer;
+    border-radius: 22.5px;
+    color: #fff;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+    inset 2px 2px 5px rgba(0, 0, 0, 0.5),
+    inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+}
+.section3 li i {
+    content: 'X';
+    position: absolute;
+    right: -32px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ff2c74;
+    border-radius: 50%;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+    inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+    inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+}
+.section3 li.done::after {
+    content: 'X';
+    font-family: sans-serif;
+    position: absolute;
+    top: 10px;
+    right: -25px;
+    width: 10px;
+    height: 10px;
+}
+button {
+    position: relative;
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    left: 20px;
+    bottom: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #fff;
+    font-size: 14px;
+    height: 38px;
+    padding: 8px 24px;
+    border-radius: 50px;
+    background-image: linear-gradient(180deg,#f88a8a,#e03c3c);
+    box-shadow: 0 4px 11px 0 rgb(37 44 97 / 15%),
+    0 1px 3px 0 rgb(93 100 148 / 20%);
+}
+#new {
+    position: relative;
+    margin-top: 20px;
+    height: 350px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
+}
+::-webkit-scrollbar {
+    width: 5px;
+
+}
+::-webkit-scrollbar-thumb {
+    background: #fff;
+}
+#doing {
+    position: relative;
+    margin-top: 20px;
+    height: 350px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+#done {
+    position: relative;
+    margin-top: 20px;
+    height: 350px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
