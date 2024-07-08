@@ -7,6 +7,9 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 body {
+    background-image: url("https://img.freepik.com/premium-vector/dark-blue-gradient-modern-abstract-background_636138-444.jpg?w=900");
+    background-repeat: no-repeat; 
+    background-size: cover;
     background-color: #2f363e;
     display: flex;
     justify-content: center;
@@ -57,6 +60,47 @@ p {
     inset 2px 2px 5px rgba(0, 0, 0, 0.5),
     inset -3px -3px 5px rgba(0, 0, 0, 0.5);
 }
+.checkbox {
+    display: none;
+}
+
+.checkbox + label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.checkbox + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -10px;
+    width: 18px;
+    height: 18px;
+    border: none;
+    border-radius: 50%;
+    background-color: #5b5e61;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.checkbox:checked + label:before {
+    background-color: #4caf50;
+    border-color: #4caf50;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.checkbox:checked + label:after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: -10px;
+    width: 6px;
+    height: 12px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
 .sections {
     position: absolute;
     display: flex;
@@ -85,7 +129,7 @@ p {
     display: flex;
     align-items: center;
     background: #1f83f2;
-    margin: 10px 10px;
+    margin: 5px 5px;
     padding: 10px 10px 10px 20px;
     min-height: 45px;
     cursor: pointer;
@@ -141,7 +185,7 @@ p {
     display: flex;
     align-items: center;
     background: #d9f21f;
-    margin: 10px 10px;
+    margin: 5px 5px;
     padding: 10px 10px 10px 20px;
     min-height: 45px;
     cursor: pointer;
@@ -194,7 +238,7 @@ p {
     display: flex;
     align-items: center;
     background: #1ff27a;
-    margin: 10px 10px;
+    margin: 5px 5px;
     padding: 10px 10px 10px 20px;
     min-height: 45px;
     cursor: pointer;
