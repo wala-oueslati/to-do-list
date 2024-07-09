@@ -8,13 +8,32 @@
 }
 body {
     background-image: url("https://img.freepik.com/premium-vector/dark-blue-gradient-modern-abstract-background_636138-444.jpg?w=900");
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-size: cover;
     background-color: #2f363e;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+}
+body.pinkMode {
+    background-image: url("https://i.pinimg.com/736x/e0/ae/e9/e0aee95a9a7ee2ab505424b8824e4623.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #ff2c74;
+}
+.pinkMode .box {
+    position: fixed;
+    width: 1000px;
+    height: 650px;
+    background: #d655bc;
+    padding: 30px 50px;
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+    10px 10px 70px rgba(184, 32, 156, 0.803),
+    inset 5px 5px 10px rgba(184, 32, 156, 0.5),
+    inset 5px 5px 20px rgba(184, 32, 156, 0.736),
+    inset -5px -5px 15px rgba(184, 32, 156, 0.75);
+    overflow: hidden;
 }
 h1 {
     width: 100%;
@@ -39,7 +58,7 @@ p {
     position: fixed;
     width: 1000px;
     height: 650px;
-    background: #2f363e;
+    background: #084487;
     padding: 30px 50px;
     box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
     10px 10px 70px rgba(0, 0, 0, 0.25),
@@ -272,7 +291,7 @@ p {
     width: 10px;
     height: 10px;
 }
-button {
+#clear {
     position: relative;
     display: inline-block;
     outline: 0;
@@ -296,6 +315,22 @@ button {
     height: 350px;
     overflow-y: auto;
     padding-right: 10px;
+}
+#mode {
+    align-items: center;
+    background-color: #8e8d8d;
+    background-size: calc(100% + 20px) calc(100% + 20px);
+    border-radius: 100px;
+    border-width: 2px;
+    box-sizing: border-box;
+    color: #ffffff98;
+    font-size: 1rem;
+    height: auto;
+    justify-content: center;
+    line-height: 1.5;
+    padding: 6px 20px;
+    position: absolute;
+    text-align: center;
 }
 ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
