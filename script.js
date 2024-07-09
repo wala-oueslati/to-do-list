@@ -2,7 +2,7 @@ let input = document.querySelector('#input');
 let newlist = document.querySelector('#new');
 let doinglist = document.querySelector('#doing');
 let donelist = document.querySelector('#done');
-let clearButton = document.querySelector('button');
+let clearButton = document.querySelector('#clear');
 let errorMessage = document.querySelector('#error-message');
 
 input.addEventListener("keyup", function(event){
@@ -59,4 +59,8 @@ function showError(message) {
 
 function hideError() {
     errorMessage.style.display = 'none';
+}
+
+function modeFunction() {
+    document.body.classList.toggle('pinkMode');
 }
