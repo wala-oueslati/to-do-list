@@ -4,35 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
-    <title>to do list</title>
+    <title>To-Do List</title>
 </head>
 <body>
-        <div class="box">
-            <button id="mode" onclick="modeFunction ()">Mode</button>
-            <h1>To Do List</h1>
-            <input 
-                type="text" 
-                id="input"
-                placeholder="new task here"
-            />
-            <p id="error-message" style="color: red; display: none;">Task is empty</p>
+    <div id="color_picker">
+        <p class="color_picker">Color Picker</p>
+        <br/>
+        <div class="color_section">
+            <p class="high_color">High Priority</p>
+            <input type="color" id="high"/>
         </div>
-        <div class="sections">
-            <div class="section1">
-                <h3>New tasks</h3>
-                <ul id="new"></ul>
-            </div>
-            <div class="section2">
-                <h3>Doing</h3>
-                <ul id="doing"></ul>
-            </div>
-            <div class="section3">
-                <h3>Done</h3>
-                <ul id="done"></ul>
-                <button id="clear">Clear</button>
-            </div>
+        <br/>
+        <div class="color_section">
+            <p class="medium_color">Medium Priority</p>
+            <input type="color" id="medium"/>
         </div>
-
+        <br/>
+        <div class="color_section">
+            <p class="low_color">Low Priority</p>
+            <input type="color" id="low"/>
+        </div>
+    </div>
+    <div class="box">
+        <button id="mode" onclick="modeFunction()">Mode</button>
+        <h1>To-Do List</h1>
+        <input type="text" id="input" placeholder="New task here"/>
+        <input type="checkbox" id="high_priority" class="checkbox" />
+        <label for="high_priority">High</label>
+        <input type="checkbox" id="medium_priority" class="checkbox" />
+        <label for="medium_priority">Medium</label>
+        <input type="checkbox" id="low_priority" class="checkbox" />
+        <label for="low_priority">Low</label>
+        <p id="error-message" style="color: red; display: none;">Task is empty</p>
+    </div>
+    <div class="sections">
+        <div class="section1">
+            <h3>New tasks</h3>
+            <ul id="new"></ul>
+        </div>
+        <div class="section2">
+            <h3>Doing</h3>
+            <ul id="doing"></ul>
+        </div>
+        <div class="section3">
+            <h3>Done</h3>
+            <ul id="done"></ul>
+            <button id="clear">Clear</button>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
